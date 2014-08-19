@@ -1,0 +1,76 @@
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 15px 0;
+  min-width: 960px;
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+  background-color: rgb(84, 166, 241);
+}
+
+body em {
+  font-style: italic;
+}
+
+body strong {
+  font-weight: bold;
+}
+
+.list-container {
+  width: 560px;
+  margin: 0 auto 20px auto;
+  padding: 10px 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+}
+
+#select-item-container, #item-list-container {
+  display: table;
+  margin: 0 auto 10px auto;
+}
+
+input[type="text"] {
+  display: inline;
+  border-radius: 10px;
+  font-size: large;
+  padding: 10px 20px;
+  height: 45px;
+  line-height: 20px;
+  width: 300px;
+}
+
+#select-item-container input[type="text"]:focus {
+    outline: none;
+    box-shadow: 0px 0px 3pt 2pt rgb(84, 166, 241);
+}
+
+img {
+  height: 30px;
+  display: inline;
+  vertical-align: middle;
+  margin: 0 0 5px 5px;
+}
+
+#item-list-container ul {
+  list-style-type: none;
+  display: table;
+  margin: 10px auto;
+}
+
+#item-list-container li {
+  padding: 5px 0;
+}
+
+.complete {
+  text-decoration: line-through;
+  background-color: rgb(235,235,235);
+}
