@@ -3,51 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <title>Shopping List</title>
-  <link rel="stylesheet" href="css/resets.css" type="text/css">
   <link rel="stylesheet" href="css/main.css" type="text/css">
+  <script src="http://code.jquery.com/jquery.min.js"></script>
+  <script src="js/app.js"></script>
 </head>
 <body>
 
-<form>
-  <div id="main" class="list-container">
+  <section>
     <h1>Shopping List</h1>
-    <div id="select-item-container">
-      <input id="item" type="text" placeholder="Enter an item"></input>
-      <img src="images/add-icon.png" title="Add item">
+    <div id="enter-item-container">
+      <input id="enter-item" type="text" placeholder="Enter an item"></input>
+      <img id="add-item" src="images/add-icon.png" title="Add item"></img>
     </div>
-  </div>
+  </section>
 
-  <div id="item-list-container" class="list-container">
+  <section id="item-list-container">
     <ul>
-      <li>
+<!--       <li>
         <input type="text" value="apples" disabled class="complete"></input>
-        <img src="images/ok_checkmark_green.png" title="uncheck item">
-        <img src="images/delete-icon.png" title="remove item">
+        <img src="images/ok_checkmark_green.png" title="uncheck item"></img>
+        <img src="images/delete-icon.png" title="remove item"></img>
       </li>
-      <li>
-        <input type="text" value="bananas" disabled class="complete"></input>
-        <img src="images/ok_checkmark_green.png" title="uncheck item">
-        <img src="images/delete-icon.png" title="remove item">
-      </li>
-      <li>
-        <input type="text" value="bacon" disabled></input>
-        <img src="images/ok_checkmark_green.png" title="check item">
-        <img src="images/delete-icon.png" title="remove item">
-      </li>
-      <li>
-        <input type="text" value="eggs" disabled></input>
-        <img src="images/ok_checkmark_green.png" title="check item">
-        <img src="images/delete-icon.png" title="remove item">
-      </li>
-      <li>
-        <input type="text" value="milk" disabled class="complete"></input>
-        <img src="images/ok_checkmark_green.png" title="uncheck item">
-        <img src="images/delete-icon.png" title="remove item">
-      </li>
-    </ul>
-  </div>
-
-</form>
+ -->    </ul>
+  </section>
 
 </body>
 </html>
