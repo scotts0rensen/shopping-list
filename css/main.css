@@ -24,29 +24,16 @@ body {
   background: linear-gradient(to bottom right, rgb(160, 210, 255) , rgb(0, 133, 255)); /* Standard syntax */
 }
 
-body em {
-  font-style: italic;
-}
-
-body strong {
-  font-weight: bold;
-}
-
-.list-container {
+section {
   width: 560px;
   margin: 0 auto 20px auto;
-  padding: 10px 20px;
+  padding: 10px 0px;
   background-color: white;
   border-radius: 10px;
 }
 
 h1 {
   text-align: center;
-}
-
-#select-item-container, #item-list-container {
-  display: table;
-  margin: 0 auto 10px auto;
 }
 
 input[type="text"] {
@@ -59,20 +46,31 @@ input[type="text"] {
   width: 300px;
 }
 
-#select-item-container input[type="text"]:focus {
-    outline: none;
-    box-shadow: 0px 0px 3pt 2pt rgb(84, 166, 241);
-}
-
 img {
   height: 30px;
   display: inline;
   vertical-align: middle;
   margin: 0 0 5px 5px;
+  cursor: pointer;
+  cursor: hand;
 }
 
-#select-item-container img {
+#enter-item-container {
+  display: table;
+  margin: 0 auto 20px auto;
+}
+
+#enter-item-container img {
   padding-left: 5px;
+}
+
+#enter-item-container input[type="text"]:focus {
+    outline: none;
+    box-shadow: 0px 0px 3pt 2pt rgb(84, 166, 241);
+}
+
+#item-list-container {
+  display: none;
 }
 
 #item-list-container ul {
@@ -85,7 +83,7 @@ img {
   padding: 5px 0;
 }
 
-.complete {
+.completed {
   text-decoration: line-through;
   background-color: rgb(235,235,235);
   background: -webkit-linear-gradient(left top, rgb(250,250,250) , rgb(223, 223, 223)); /* For Safari 5.1 to 6.0 */
